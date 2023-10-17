@@ -13,7 +13,7 @@ class Usuario
     public $usuario_empleado;
     protected $clave_empleado;
 
-    public function __construct($id=null, $nombre_persona, $apellido_persona, $dni_persona, $telefono_persona, $direccion_empleado, $fecha_contratacion, $email_empleado, $usuario_empleado, $clave_empleado)
+    public function __construct($id_persona=null, $nombre_persona, $apellido_persona, $dni_persona, $telefono_persona, $direccion_empleado, $fecha_contratacion, $email_empleado, $usuario_empleado, $clave_empleado)
     {
         $this->id_persona = $id_persona;
         $this->nombre_persona = $nombre_persona;
