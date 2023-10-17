@@ -62,7 +62,7 @@ if (isset($_SESSION['usuario'])) {
     <section id="nuevousuario">
         <h2>Complete los siguientes campos</h2>
         <div class="container">
-            <form id="cargarUsuarioForm" action="cargar_usuario.php" method="post">
+            <form id="cargarUsuarioForm" action="crear_usuario.php" method="post">
                 <input type="text" id="nombre_persona" name="nombre_persona" placeholder= "Nombre" required>
                 <input type="text" id="apellido_persona" name="apellido_persona" placeholder= "Apellido" required>
                 <input type="number" id="dni_persona" name="dni_persona" placeholder= "DNI" required>
