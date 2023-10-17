@@ -15,6 +15,7 @@ if (isset($_SESSION['usuario'])) {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Ecos Del Pasado</title>
+        <link rel="stylesheet" href="estilosconfirmacion.css">
     </head>
     <section class="container">
       <div class="titulo">
