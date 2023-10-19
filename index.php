@@ -20,16 +20,21 @@
 
     </header>
     
-    </form>
+        <?php
+            if (isset($_GET['mensaje'])) {
+                echo '<div id="mensaje" class="alert alert-primary text-center">
+                    <p>'.$_GET['mensaje'].'</p></div>';
+            }
+        ?>
 
     <section id="login">
         <h2>Iniciar Sesión del Bibliotecario</h2>
-        <form id="loginForm" action="panel_bibliotecario.php" method="post">
+        <form action="login.php" method="post">
             <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" required>
+            <input type="text" id="usuario_empleado" name="usuario_empleado" required>
             <br>
             <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
+            <input type="password" id="clave_empleado" name="clave_empleado" required>
             <br>
             <button type="submit">Iniciar Sesión</button>
         </form>
@@ -39,5 +44,4 @@
         <p>&copy; 2023 Biblioteca Ecos del Pasado - Todos los derechos reservados</p>
     </footer>
 </body>
-</div>
 </html>
