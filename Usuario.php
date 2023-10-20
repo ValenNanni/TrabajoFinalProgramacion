@@ -3,14 +3,14 @@
 class Usuario
 {
     protected $id_persona;
-    protected $nombre_persona;
-    protected $apellido_persona;
+    public $nombre_persona;
+    public $apellido_persona;
     protected $dni_persona;
     protected $telefono_persona;
     protected $direccion_empleado;
     protected $email_empleado;
     protected $fecha_contratacion;
-    protected $usuario_empleado;
+    public $usuario_empleado;
     protected $clave_empleado;
 
     public function __construct($nombre_persona, $apellido_persona, $dni_persona, $telefono_persona, $direccion_empleado, $email_empleado, $fecha_contratacion, $usuario_empleado, $clave_empleado, $id_persona=null)
