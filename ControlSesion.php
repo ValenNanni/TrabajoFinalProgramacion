@@ -49,4 +49,18 @@ class ControlSesion
         $repo = new RepoUsuario();
         return $repo->eliminar($usuario);
     }
+    public function modificar(string $usuario_empleado, string $nombre_persona, string $apellido_persona, Usuario $usuario)
+    {
+        $repo = new RepoUsuario();
+
+        if ($repo->modificar($usuario_empleado, $nombre_persona, $apellido_persona, $usuario))
+        {
+            $usuario->setDatos($usuario_empleado, $nombre_persona, $apellido_persona);
+            $_SESSION['usuario'] = serialize($usuario);
+
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
