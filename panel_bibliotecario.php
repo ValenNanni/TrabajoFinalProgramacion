@@ -40,6 +40,7 @@ require_once 'clases/ControlSesion.php';
            
     <p><a href="cargar_nuevo_usuario.php">Crear nuevo usuario</a></p>
     <p><a href="cargar_nuevo_libro.php">Cargar nuevo libro</a></p>
+    <p><a href="listado_libros.php">Buscar libros</a></p>
     <p><a href="modificar_datos.php">Modificar datos de mi usuario</a></p>
     <p><a href="confirmareliminarusuario.php">Eliminar mi usuario</a></p>
     <p><a href="logout.php">Cerrar sesión</a></p>
