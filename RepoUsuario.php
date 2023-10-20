@@ -76,5 +76,16 @@ class RepoUsuario
       return $query->execute();
 
    }
+public function modificar(string $usuario_empleado, string $nombre_persona, string $apellido_persona, Usuario $usuario) {
+    $q = "UPDATE personas SET usuario_empleado = ?, nombre_persona = ?, apellido_persona = ? ";
+    $q.= " WHERE id_persona = ?;";
 
+    $query = self::$conexion->prepare($q);
+
+    $id = $usuario->getId();
+
+    $query->bind_param("sssd", $usuario_empleado, $nombre_persona, $apellido_persona, $id_persona);
+
+    return $query->execute();
+}
 }
