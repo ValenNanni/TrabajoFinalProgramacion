@@ -43,7 +43,6 @@
     <form method="POST">
         <label for="filtro_genero">Filtrar por Género:</label>
         <select name="filtro_genero" id="filtro_genero">
-            <option value="">Todos</option>
             <option value="Romance">Romance</option>
             <option value="Misterio">Misterio</option>
             <option value="Fantasía">Fantasía</option>
