@@ -30,6 +30,7 @@ class ControlSesion
         $direccion_empleado = $usuario->getDireccion();
         $email_empleado = $usuario->getEmail();
         $fecha_contratacion = $usuario->getFechaContratacion();
+        $usuario_empleado = $usuario->getUsuario();
         
         $id_persona = $repo->save($nombre_persona, $apellido_persona, $dni_persona, $telefono_persona, $direccion_empleado, $email_empleado, $fecha_contratacion, $usuario_empleado, $clave_empleado);
         
@@ -52,6 +53,10 @@ class ControlSesion
     public function modificar(string $usuario_empleado, string $nombre_persona, string $apellido_persona, Usuario $usuario)
     {
         $repo = new RepoUsuario();
+        if (isset($_SESSION['usuario'])) {
+    
+            $usuario = unserialize($_SESSION['usuario']);
+        }
 
         if ($repo->modificar($usuario_empleado, $nombre_persona, $apellido_persona, $usuario))
         {
