@@ -25,8 +25,9 @@ CREATE TABLE IF NOT EXISTS `biblioteca2`.`libros` (
   `nombre_libro` VARCHAR(45) NOT NULL,
   `anio_publicacion` VARCHAR(45) NOT NULL,
   `copias_disponibles` VARCHAR(45) NOT NULL,
-  `genero` VARCHAR(45) NOT NULL,
   `autor` VARCHAR(45) NOT NULL,
+  `genero` VARCHAR(45) NOT NULL,
+  
   PRIMARY KEY (`id_libro`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 4
